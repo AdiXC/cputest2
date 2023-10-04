@@ -1,0 +1,16 @@
+name: cpu_load
+version: 1.0
+description:  custom pack to check CPU utilization for spikes
+author: Aditya Iyer
+email: aditya.iyer@digitalxc.com
+
+packs:
+  - core
+
+actions:
+  - check_cpu_utilization:
+      parameters:
+        threshold: 40
+
+on:
+  - manual
